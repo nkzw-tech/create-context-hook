@@ -1,0 +1,43 @@
+{
+  "name": "@nkzw/create-context-hook",
+  "version": "1.0.0",
+  "description": "Simplify creating React Context with hooks.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "mkdir -p lib && tsup src/index.tsx -d lib --target=node22 --format=esm --clean --no-splitting --dts",
+    "format": "prettier \"**/*.{js,jsx,json,tsx,ts}\" --write",
+    "lint": "eslint --cache .",
+    "test": "tsc && pnpm lint && vitest"
+  },
+  "author": {
+    "name": "Christoph Nakazawa",
+    "email": "christoph.pojer@gmail.com"
+  },
+  "homepage": "https://github.com/nkzw-tech/create-context-hook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkzw-tech/create-context-hook"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@nkzw/eslint-config": "^2.1.0",
+    "@types/node": "^22.13.10",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  },
+  "dependencies": {
+    "@types/react": "^19.0.11",
+    "react": "^19.0.0"
+  }
+}
