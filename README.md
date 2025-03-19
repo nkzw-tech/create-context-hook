@@ -46,9 +46,9 @@ import { HideContext } from './HideContext';
 
 const App = () => {
   return (
-    <HideContext.Provider>
+    <HideContext>
       <MyComponent />
-    </HideContext.Provider>
+    </HideContext>
   );
 };
 ```
