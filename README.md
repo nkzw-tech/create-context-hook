@@ -5,7 +5,7 @@ Simplify the creation of context hooks with global singleton state.
 ## Installation
 
 ```bash
-npm install @nkzw-tech/create-context-hook
+npm install @nkzw/create-context-hook
 ```
 
 ## Usage
