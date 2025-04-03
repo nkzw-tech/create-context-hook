@@ -8,7 +8,9 @@ export default function createContextHook<T>(
 
   return [
     ({ children }: { children: ReactNode }) => (
-      <Context value={contextInitializer()}>{children}</Context>
+      <Context.Provider value={contextInitializer()}>
+        {children}
+      </Context.Provider>
     ),
     () => useContext(Context) as T,
   ];

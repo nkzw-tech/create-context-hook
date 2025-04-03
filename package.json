@@ -1,6 +1,6 @@
 {
   "name": "@nkzw/create-context-hook",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Simplify creating React Context with hooks.",
   "type": "module",
   "main": "./lib/index.js",
@@ -38,6 +38,6 @@
     "typescript": "^5.8.2"
   },
   "peerDependencies": {
-    "react": "^19.0.0"
+    "react": "^18 || ^19"
   }
 }
